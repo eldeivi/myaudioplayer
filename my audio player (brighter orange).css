@@ -24,6 +24,8 @@ html, body, #root, #app {
             cursor: pointer;
             background: transparent;
             user-select: none;
+			box-sizing: border-box !important;
+    padding-right: 15px !important; /* Creates a safe buffer zone on the right */
         }
 
         /* Left Side Controls & Info */
@@ -135,6 +137,9 @@ html, body, #root, #app {
 	    margin-left: 14px;
 			max-width: 100%;
     right: auto;
+			pointer-events: none !important;
+    white-space: nowrap !important;
+    transform: translate(-100%, -50%) !important; /* Keeps the counter box left-aligned to the playhead at the far right edge */
 			
         }
 
