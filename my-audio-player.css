@@ -58,8 +58,10 @@
         }
 
         .track-duration {
-            font-size: 14px;
-            color: #666666;
+            font-family: 'Wix Madefor Display', sans-serif;
+			font-weight: 400;
+            font-size: 13px;
+            color: #000000;
             transition: color 0.2s ease;
             line-height: 1;
         }
