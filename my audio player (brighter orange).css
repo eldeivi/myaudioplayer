@@ -1,8 +1,8 @@
  /* Player Container */
         .audio-playlist {
             font-family: "Avenir Light", "Avenir", -apple-system, BlinkMacSystemFont, sans-serif;
-            max-width: 400px;
-            margin: 0px auto;
+            max-width: 300px;
+            margin: 40px auto;
             background: transparent;
         }
 
