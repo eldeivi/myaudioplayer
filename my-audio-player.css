@@ -47,14 +47,14 @@
         }
 
         .track-title {
-            font-size: 25px;
+            font-size: 14px;
             color: #000000;
             transition: color 0.2s ease;
             line-height: 1;            
         }
 
         .track-duration {
-            font-size: 25px;
+            font-size: 14px;
             color: #666666;
             transition: color 0.2s ease;
             line-height: 1;
