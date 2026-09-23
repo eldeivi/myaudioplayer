@@ -1,0 +1,142 @@
+ /* Player Container */
+        .audio-playlist {
+            font-family: "Avenir Light", "Avenir", -apple-system, BlinkMacSystemFont, sans-serif;
+            max-width: 400px;
+            margin: 40px auto;
+            background: transparent;
+        }
+
+        /* Track Row - TIGHTENED SPACING HERE */
+        .track-row {
+            position: relative; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 10px 20px 10px; /* Reduced top padding to 10px and bottom to 20px */
+            cursor: pointer;
+            background: transparent;
+            user-select: none;
+        }
+
+        /* Left Side Controls & Info */
+        .track-left {
+            display: flex;
+            align-items: center; 
+            gap: 15px;
+        }
+
+        .play-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            display: flex;
+            align-items: center;      
+            justify-content: center;   
+            width: 22px;  
+            height: 22px; 
+            line-height: 0;            
+        }
+
+        .play-btn svg {
+            width: 100%;
+            height: 100%;
+            fill: #000000; 
+            transition: fill 0.2s ease;
+            display: block;
+        }
+
+        .track-title {
+            font-size: 15px;
+            color: #000000;
+            transition: color 0.2s ease;
+            line-height: 1;            
+        }
+
+        .track-duration {
+            font-size: 15px;
+            color: #666666;
+            transition: color 0.2s ease;
+            line-height: 1;
+        }
+
+        /* Hover States */
+        .track-row:hover .play-btn svg,
+        .track-row.active .play-btn svg {
+            fill: #f05e42; 
+        }
+        
+        .track-row:hover .track-title,
+        .track-row.active .track-title {
+            color: #f05e42;
+        }
+
+        .track-row:hover .track-duration,
+        .track-row.active .track-duration {
+            color: #f05e42;
+        }
+
+        /* Timeline Container */
+        .progress-container {
+            position: absolute;
+            bottom: 0px; 
+            left: 14px; 
+            right: 10px; 
+            height: 14px; 
+            background: transparent;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        /* The faint entire track background line - Kept thin (1px) */
+        .progress-rail {
+            position: absolute;
+            bottom: 6px; 
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(227, 94, 79, 0.25);
+        }
+
+        /* The filling progress line - MADE THICKER (3px) */
+        .progress-bar {
+            position: absolute;
+            bottom: 6px; /* Adjusted slightly up to remain perfectly centered at 3px height */
+            left: 0;
+            height: 3px; /* Thicker solid playback line */
+            width: 0%;
+            background-color: #f05e42; 
+        }
+
+        /* Live Playback Time Counter */
+        .time-counter {
+            position: absolute;
+            top: 50%;
+            left: 0%; 
+            transform: translate(-50%, -50%); 
+            font-size: 11px;
+            color: #f05e42;
+            background-color: #ffffff; 
+            padding: 0 4px; 
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            pointer-events: none;
+            white-space: nowrap;
+            z-index: 2;
+	    margin-left: 14px;
+        }
+
+        /* Show full timeline when track is active */
+        .track-row.active .progress-container {
+            opacity: 1;
+        }
+
+        /* ISOLATED HOVER STATE: Only shows the counter when mouse enters the progress element explicitly */
+        .track-row.active .progress-container:hover .time-counter {
+            opacity: 1;
+        }
+.play-btn:focus,
+.play-btn:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
