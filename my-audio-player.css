@@ -52,7 +52,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif !important;
     		font-size: 14px !important;
     		font-weight: 300 !important;
-            color: red;
+            color: red !important;
             transition: color 0.2s ease;
             line-height: 1;
 		}
