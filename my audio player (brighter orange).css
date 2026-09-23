@@ -124,6 +124,8 @@
             white-space: nowrap;
             z-index: 2;
 	    margin-left: 14px;
+			max-width: 100%;
+    box-sizing: border-box;
         }
 
         /* Show full timeline when track is active */
@@ -141,6 +143,6 @@
     box-shadow: none;
 }
 	
-body, div {
+html, body {
     overflow: hidden !important;
 }
