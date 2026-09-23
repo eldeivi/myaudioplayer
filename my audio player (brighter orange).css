@@ -139,6 +139,7 @@
 .play-btn:focus-visible {
     outline: none;
     box-shadow: none;
-body {
+}
+	body, div {
     overflow: hidden !important;
 }
