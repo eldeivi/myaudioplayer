@@ -50,7 +50,7 @@
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
        		font-size: 14px !important;
     		font-weight: 300 !important;
-            color: red !important;
+            color: #000000 !important;
             transition: color 0.2s ease;
             line-height: 1;
 		}
