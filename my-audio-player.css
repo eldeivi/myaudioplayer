@@ -48,6 +48,7 @@
 
         .track-title {
             font-size: 14px;
+			font-weight: 300 !important;
             color: #000000;
             transition: color 0.2s ease;
             line-height: 1;            
