@@ -133,6 +133,8 @@ html, body, #root, #app {
             white-space: nowrap;
             z-index: 2;
 	    margin-left: 14px;
+			max-width: 100%;
+    right: auto;
 			
         }
 
