@@ -1,4 +1,6 @@
- /* Player Container */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+/* Player Container */
         .audio-playlist {
             font-family: "Avenir Light", "Avenir", -apple-system, BlinkMacSystemFont, sans-serif;
             max-width: 400px;
@@ -47,9 +49,9 @@
         }
 
         .track-title {
-			font-family: Verdana, sans-serif;
+			font-family: 'Inter', sans-serif;
             font-size: 13px;
-            color: #363636;
+            color: #000000;
             transition: color 0.2s ease;
             line-height: 1;            
         }
