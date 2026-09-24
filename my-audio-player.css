@@ -191,3 +191,16 @@
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2s2-.9 2-2V6c0-1.1-.9-2-2-2zm8 0c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2s2-.9 2-2V6c0-1.1-.9-2-2-2z"/></svg>');
   mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2s2-.9 2-2V6c0-1.1-.9-2-2-2zm8 0c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2s2-.9 2-2V6c0-1.1-.9-2-2-2z"/></svg>');
 }
+
+/* Prevent scrollbars from appearing on the embed container */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Stops scrollbars from ever rendering */
+}
+
+/* Ensure the player container fits tightly without extra outer margins */
+.audio-playlist {
+  margin: 0 auto !important; /* Removes top/bottom 40px margins that cause overflow */
+  padding-bottom: 5px;       /* Tiny cushion for hover elements */
+}
