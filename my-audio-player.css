@@ -64,6 +64,13 @@
             color: #000000;
             transition: color 0.2s ease;
             line-height: 1;
+			font-variant-numeric: tabular-nums;
+			-moz-font-feature-settings: "tnum";
+			-webkit-font-feature-settings: "tnum";
+			font-feature-settings: "tnum";
+			text-align: right;
+			display: inline-block;
+			min-width: 36px;
         }
 
         /* Hover States */
