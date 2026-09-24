@@ -58,19 +58,14 @@
         }
 
         .track-duration {
-            font-family: 'Wix Madefor Display', sans-serif;
+            font-family: monospace;
+			text-align: right;
 			font-weight: 400;
             font-size: 13px;
+			width: 40px;
             color: #000000;
             transition: color 0.2s ease;
-            line-height: 1;
-			font-variant-numeric: tabular-nums;
-			-moz-font-feature-settings: "tnum";
-			-webkit-font-feature-settings: "tnum";
-			font-feature-settings: "tnum";
-			text-align: right;
-			display: inline-block;
-			min-width: 36px;
+            line-height: 1;			
         }
 
         /* Hover States */
