@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap');
 
@@ -59,10 +60,10 @@
         }
 
         .track-duration {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Manrope', sans-serif;
 			text-align: right;
 			font-weight: 400;
-            font-size: 15px;
+            font-size: 14px;
 			width: 40px;
             color: #000000;
             transition: color 0.2s ease;
