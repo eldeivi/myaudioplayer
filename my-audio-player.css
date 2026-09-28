@@ -121,6 +121,8 @@
 
         /* Live Playback Time Counter */
         .time-counter {
+			font-family: 'Manrope', sans-serif;
+			font-variant-numeric: tabular-nums;
             position: absolute;
             top: 50%;
             left: 0%; 
