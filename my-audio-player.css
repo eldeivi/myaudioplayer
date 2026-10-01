@@ -211,3 +211,33 @@ html, body {
   margin: 0 auto !important; /* Removes top/bottom 40px margins that cause overflow */
   padding-bottom: 5px;       /* Tiny cushion for hover elements */
 }
+
+/* 1. Ensure the track row distributes space cleanly across the full width */
+.track-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* 2. Allow the left section to expand, but force its contents to truncate if too long */
+.track-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0; /* Critical for flex child truncation */
+    margin-right: 16px; /* Creates guaranteed breathing room before duration */
+}
+
+/* 3. Keep the title on one line with an ellipsis if it runs out of room */
+.track-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 4. Lock duration to the right and prevent it from shrinking or moving */
+.track-duration {
+    flex-shrink: 0;
+    margin-left: auto;
+}
