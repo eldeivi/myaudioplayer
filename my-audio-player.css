@@ -212,21 +212,41 @@ html, body {
   padding-bottom: 5px;       /* Tiny cushion for hover elements */
 }
 
-/* 1. Prevent play button distortion across all players */
+/* 1. Force the playlist and rows to fill 100% width and align flush left */
+.audio-playlist,
+.track-row {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+}
+
+/* 2. Left group (button + title) takes available space and aligns left */
+.track-left {
+    display: flex !important;
+    align-items: center !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    margin-right: 16px !important;
+}
+
+/* 3. Lock play button so it never shrinks */
 .play-btn {
     flex-shrink: 0 !important;
 }
 
-/* 2. Lock the duration so it never cuts off or gets pushed out of bounds */
-.track-duration {
-    flex-shrink: 0 !important;
-    white-space: nowrap !important;
-}
-
-/* 3. Allow titles to use available space and truncate gracefully only when out of room */
+/* 4. Let title truncate cleanly if the box gets too narrow */
 .track-title {
-    min-width: 0 !important;
     white-space: nowrap !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
+}
+
+/* 5. Pin durations flush to the right edge so they form a perfect vertical line */
+.track-duration {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    margin-left: auto !important;
+    text-align: right !important;
 }
